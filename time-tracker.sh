@@ -17,16 +17,16 @@ start() {
     echo -n "Enter a title for your next task: ";
     read taskTitle
     startTime=$( date '+%m-%d-%y --- %r' )
-    echo $taskTitle >> test.txt
-    echo $startTime >> test.txt
+    echo $taskTitle >> tasks.txt
+    echo $startTime >> tasks.txt
     # instead of using echo, pass output to file
 }
 
 # END TASK
 end() {
     endTime=$( date '+%m-%d-%y --- %r' )
-    echo $endTime >> test.txt
-    echo " "  >> test.txt
+    echo $endTime >> tasks.txt
+    echo " "  >> tasks.txt
     # instead of using echo, pass output to file
 }
 
